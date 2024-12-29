@@ -52,7 +52,7 @@ const Navbar = () => {
         {!usertype ?
         
             <div className="navbar">
-              <h3 onClick={()=> navigate('')}>SB Foods</h3>
+              <h3 onClick={()=> navigate('')}>Revive Foods</h3>
               <div className="nav-content">
                 <div className="nav-search">
                   <input type="text" name="nav-search" id="nav-search" placeholder='Search Restaurants, cuisine, etc.,' onChange={(e)=>setProductSearch(e.target.value)}  />
@@ -74,7 +74,7 @@ const Navbar = () => {
         <>
             {usertype === 'customer' ?
                 <div className="navbar">
-                  <h3 onClick={()=> navigate('')}>SB Foods</h3>
+                  <h3 onClick={()=> navigate('')}>Revive Foods</h3>
                   <div className="nav-content">
                     <div className="nav-search">
                       <input type="text" name="nav-search" id="nav-search" placeholder='Search Restaurants, cuisine, etc.,' onChange={(e)=>setProductSearch(e.target.value)}  />
@@ -104,7 +104,7 @@ const Navbar = () => {
             <>
               {usertype === 'admin' ? 
                 <div className="navbar-admin">
-                  <h3 onClick={()=> navigate('/admin')}>SB Foods (admin)</h3>
+                  <h3 onClick={()=> navigate('/admin')}>Revive Foods (admin)</h3>
                   
                   <ul>
                     <li onClick={()=> navigate('/admin')}>Home</li>
@@ -120,7 +120,7 @@ const Navbar = () => {
                 <>
                   {usertype === 'restaurant' ? 
                     <div className="navbar-admin">
-                      <h3 onClick={()=> navigate('/restaurant')}>SB Foods (Restaurant)</h3>
+                      <h3 onClick={()=> navigate('/restaurant')}>Revive Foods (Restaurant)</h3>
                       
                       <ul>
                         <li onClick={()=> navigate('/restaurant')}>Home</li>
